@@ -1,0 +1,65 @@
+# Dataset directories, derived patient-level data, and local output
+data/
+datasets/
+imgs/
+images/
+imgs_part_*/
+outputs/
+*.csv
+*.tsv
+*.parquet
+*.xlsx
+
+# Clinical images and case illustrations
+*.[pP][nN][gG]
+*.[jJ][pP][gG]
+*.[jJ][pP][eE][gG]
+*.tif
+*.tiff
+*.webp
+*.dcm
+*.dicom
+
+# Downloaded datasets and checkpoints
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+checkpoints/
+weights/
+
+# Local caches and environments
+__pycache__/
+*.py[cod]
+.cache/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+.venv*/
+venv*/
+env/
+.conda/
+build/
+dist/
+*.egg-info/
+
+# OS, editor, private records, and credentials
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+private/
+personal/
+.env
+.env.*
+*.pem
+*.key
+
+# Local copies of the original aggregate summary
+/pad_ufes20_my_run.json
+/pad_ufes20_error_analysis_results.json

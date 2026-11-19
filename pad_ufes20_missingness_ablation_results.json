@@ -1,0 +1,167 @@
+{
+  "models": {
+    "model_a": "Image + Age + Site + Unknown Indicators + Symptoms",
+    "model_b": "Image + Age + Site + Symptoms"
+  },
+  "encoding": {
+    "symptoms": [
+      "grew",
+      "changed",
+      "bleed"
+    ],
+    "yes": {
+      "True": 1,
+      "False": 0,
+      "UNK": 0
+    },
+    "unknown_indicator_model_a_only": {
+      "True": 0,
+      "False": 0,
+      "UNK": 1
+    },
+    "interpretation": "Encoding ablation only. Other features can still carry missingness information."
+  },
+  "images": 2298,
+  "device": "cpu",
+  "torch": "2.15.0",
+  "checkpoint_sha256": "f37072fd47e89c5e827621c5baffa7500819f7896bbacec160b1a16c560e07ec",
+  "seed": 42,
+  "fold_lesions": {
+    "1": 379,
+    "2": 379,
+    "3": 379,
+    "4": 377,
+    "5": 377
+  },
+  "bootstrap_method": "Paired patient-cluster percentile, fixed out-of-fold predictions",
+  "all_lesions": {
+    "lesions": 1891,
+    "patients": 1373,
+    "positive_lesions": 833,
+    "negative_lesions": 1058,
+    "metrics": {
+      "model_a": {
+        "auroc": 0.9198889385621923,
+        "log_loss": 0.3750205277885546
+      },
+      "model_b": {
+        "auroc": 0.8795809439087544,
+        "log_loss": 0.43933536104297227
+      }
+    },
+    "delta_a_minus_b": {
+      "auroc": 0.04030799465343793,
+      "log_loss": -0.06431483325441767
+    },
+    "patient_bootstrap_95_ci": {
+      "auroc": [
+        0.033073674728059346,
+        0.04777324341006385
+      ],
+      "log_loss": [
+        -0.07453814291731138,
+        -0.05465026713036228
+      ]
+    },
+    "bootstrap_attempted": 2000,
+    "bootstrap_valid": 2000
+  },
+  "biopsy_confirmed_lesions": {
+    "lesions": 1047,
+    "patients": 783,
+    "positive_lesions": 833,
+    "negative_lesions": 214,
+    "metrics": {
+      "model_a": {
+        "auroc": 0.8095780368222055,
+        "log_loss": 0.47596179075494055
+      },
+      "model_b": {
+        "auroc": 0.7619963873399828,
+        "log_loss": 0.5474934676956171
+      }
+    },
+    "delta_a_minus_b": {
+      "auroc": 0.047581649482222765,
+      "log_loss": -0.07153167694067658
+    },
+    "patient_bootstrap_95_ci": {
+      "auroc": [
+        0.032453690472066254,
+        0.06358168364140068
+      ],
+      "log_loss": [
+        -0.08911240609244703,
+        -0.05488327521252167
+      ]
+    },
+    "bootstrap_attempted": 2000,
+    "bootstrap_valid": 2000
+  },
+  "exploratory_missingness_subsets": {
+    "no_unknown_symptoms": {
+      "lesions": 1502,
+      "patients": 1120,
+      "positive_lesions": 491,
+      "negative_lesions": 1011,
+      "metrics": {
+        "model_a": {
+          "auroc": 0.9075888243577269,
+          "log_loss": 0.37849165956711883
+        },
+        "model_b": {
+          "auroc": 0.9036101861196896,
+          "log_loss": 0.39881358904229885
+        }
+      },
+      "delta_a_minus_b": {
+        "auroc": 0.003978638238037346,
+        "log_loss": -0.020321929475180023
+      },
+      "patient_bootstrap_95_ci": {
+        "auroc": [
+          0.002010658449616595,
+          0.005903437819281356
+        ],
+        "log_loss": [
+          -0.026320006097143626,
+          -0.014587518897724748
+        ]
+      },
+      "bootstrap_attempted": 2000,
+      "bootstrap_valid": 2000
+    },
+    "any_unknown_symptom": {
+      "lesions": 389,
+      "patients": 320,
+      "positive_lesions": 342,
+      "negative_lesions": 47,
+      "metrics": {
+        "model_a": {
+          "auroc": 0.8326489983824811,
+          "log_loss": 0.3616178544430441
+        },
+        "model_b": {
+          "auroc": 0.8187134502923976,
+          "log_loss": 0.5957973187422257
+        }
+      },
+      "delta_a_minus_b": {
+        "auroc": 0.01393554809008346,
+        "log_loss": -0.23417946429918163
+      },
+      "patient_bootstrap_95_ci": {
+        "auroc": [
+          0.003458136662613526,
+          0.027128435260782742
+        ],
+        "log_loss": [
+          -0.270495187968115,
+          -0.19945486024449893
+        ]
+      },
+      "bootstrap_attempted": 2000,
+      "bootstrap_valid": 2000
+    }
+  }
+}
