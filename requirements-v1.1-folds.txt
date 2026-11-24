@@ -1,0 +1,2 @@
+-r requirements-v1.1-curation.txt
+scikit-learn==1.9.1

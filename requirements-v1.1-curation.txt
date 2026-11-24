@@ -1,0 +1,4 @@
+# Stage 2 only. Verified with Python 3.12.10.
+numpy==2.5.5
+Pillow==13.0.0
+scipy==1.18.1
