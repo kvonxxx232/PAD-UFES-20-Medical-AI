@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 700" width="1120" height="700" role="img" aria-labelledby="title description">
+  <title id="title">Figure 5. Symptom missingness and case composition</title>
+  <desc id="description">Descriptive S7 analysis of 1,865 curated lesion keys. Cancer-positive keys by number of unknown symptoms: 0 unknown, 475 of 1478, 1 unknown, 6 of 10, 2 unknown, 330 of 371, 3 unknown, 5 of 6. Biopsy-confirmed keys: Complete, 638 of 1478, Missing, 387 of 387.</desc>
+  <rect x="0" y="0" width="1120" height="700" fill="white" />
+  <text x="46" y="35" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="bold" fill="#125C69" letter-spacing="1.2">PAD-UFES-20 V1.1  ·  FIGURE 5</text>
+  <text x="44" y="81" font-family="Arial, Helvetica, sans-serif" font-size="37" font-weight="bold" fill="#182A37">Symptom missingness and case composition</text>
+  <text x="46" y="111" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="normal" fill="#43545F">Prespecified descriptive analysis (S7)  ·  1,865 curated lesion keys</text>
+  <line x1="46" y1="129" x2="1074" y2="129" stroke="#D7E0E3" stroke-width="1" />
+  <rect x="46" y="524" width="1028" height="71" fill="#F1F6F6" />
+  <g id="panel-A">
+    <text x="52" y="169" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="bold" fill="#39556B">A</text>
+    <text x="84" y="169" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="bold" fill="#182A37">Cancer-positive fraction by number of unknown symptoms</text>
+    <text x="52" y="192" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="normal" fill="#43545F">One point per symptom-count group</text>
+    <line x1="108" y1="448.0" x2="605" y2="448.0" stroke="#43545F" stroke-width="1" />
+    <text x="98" y="453.0" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="normal" fill="#43545F" text-anchor="end">0%</text>
+    <line x1="108" y1="391.5" x2="605" y2="391.5" stroke="#D7E0E3" stroke-width="1" />
+    <text x="98" y="396.5" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="normal" fill="#43545F" text-anchor="end">25%</text>
+    <line x1="108" y1="335.0" x2="605" y2="335.0" stroke="#D7E0E3" stroke-width="1" />
+    <text x="98" y="340.0" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="normal" fill="#43545F" text-anchor="end">50%</text>
+    <line x1="108" y1="278.5" x2="605" y2="278.5" stroke="#D7E0E3" stroke-width="1" />
+    <text x="98" y="283.5" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="normal" fill="#43545F" text-anchor="end">75%</text>
+    <line x1="108" y1="222.0" x2="605" y2="222.0" stroke="#D7E0E3" stroke-width="1" />
+    <text x="98" y="227.0" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="normal" fill="#43545F" text-anchor="end">100%</text>
+    <line x1="108" y1="222" x2="108" y2="448" stroke="#43545F" stroke-width="1" />
+    <text x="46" y="335.0" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="bold" fill="#182A37" text-anchor="middle" transform="rotate(-90 46 335.0)">Cancer-positive fraction</text>
+    <text x="356.5" y="505" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="bold" fill="#182A37" text-anchor="middle">Number of unknown symptoms per key</text>
+    <text x="52" y="549" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="bold" fill="#43545F">Cancer-positive / total lesion keys</text>
+    <circle id="estimate-A-0" cx="170.125" cy="375.3680649526387" r="7" fill="#39556B" stroke="#39556B" stroke-width="2.5" />
+    <rect x="133.125" y="344.3680649526387" width="74" height="21" fill="white" />
+    <text x="170.125" y="361.3680649526387" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="bold" fill="#39556B" text-anchor="middle">32.14%</text>
+    <text x="170.125" y="474" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="normal" fill="#182A37" text-anchor="middle">0</text>
+    <text x="170.125" y="580" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="bold" fill="#39556B" text-anchor="middle" id="counts-A-0">475 / 1,478</text>
+    <circle id="estimate-A-1" cx="294.375" cy="312.4" r="7" fill="white" stroke="#39556B" stroke-width="2.5" />
+    <rect x="257.375" y="281.4" width="74" height="21" fill="white" />
+    <text x="294.375" y="298.4" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="bold" fill="#39556B" text-anchor="middle">60.00%</text>
+    <text x="294.375" y="474" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="normal" fill="#182A37" text-anchor="middle">1</text>
+    <text x="294.375" y="580" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="bold" fill="#39556B" text-anchor="middle" id="counts-A-1">6 / 10</text>
+    <circle id="estimate-A-2" cx="418.625" cy="246.9757412398922" r="7" fill="#39556B" stroke="#39556B" stroke-width="2.5" />
+    <rect x="381.625" y="215.9757412398922" width="74" height="21" fill="white" />
+    <text x="418.625" y="232.9757412398922" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="bold" fill="#39556B" text-anchor="middle">88.95%</text>
+    <text x="418.625" y="474" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="normal" fill="#182A37" text-anchor="middle">2</text>
+    <text x="418.625" y="580" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="bold" fill="#39556B" text-anchor="middle" id="counts-A-2">330 / 371</text>
+    <circle id="estimate-A-3" cx="542.875" cy="259.66666666666663" r="7" fill="white" stroke="#39556B" stroke-width="2.5" />
+    <rect x="505.875" y="228.66666666666663" width="74" height="21" fill="white" />
+    <text x="542.875" y="245.66666666666663" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="bold" fill="#39556B" text-anchor="middle">83.33%</text>
+    <text x="542.875" y="474" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="normal" fill="#182A37" text-anchor="middle">3</text>
+    <text x="542.875" y="580" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="bold" fill="#39556B" text-anchor="middle" id="counts-A-3">5 / 6</text>
+  </g>
+  <g id="panel-B">
+    <text x="652" y="169" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="bold" fill="#125C69">B</text>
+    <text x="684" y="169" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="bold" fill="#182A37">Biopsy status by symptom completeness</text>
+    <text x="652" y="192" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="normal" fill="#43545F">Biopsy recorded on every photo of a key</text>
+    <line x1="743" y1="448.0" x2="1068" y2="448.0" stroke="#43545F" stroke-width="1" />
+    <text x="733" y="453.0" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="normal" fill="#43545F" text-anchor="end">0%</text>
+    <line x1="743" y1="391.5" x2="1068" y2="391.5" stroke="#D7E0E3" stroke-width="1" />
+    <text x="733" y="396.5" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="normal" fill="#43545F" text-anchor="end">25%</text>
+    <line x1="743" y1="335.0" x2="1068" y2="335.0" stroke="#D7E0E3" stroke-width="1" />
+    <text x="733" y="340.0" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="normal" fill="#43545F" text-anchor="end">50%</text>
+    <line x1="743" y1="278.5" x2="1068" y2="278.5" stroke="#D7E0E3" stroke-width="1" />
+    <text x="733" y="283.5" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="normal" fill="#43545F" text-anchor="end">75%</text>
+    <line x1="743" y1="222.0" x2="1068" y2="222.0" stroke="#D7E0E3" stroke-width="1" />
+    <text x="733" y="227.0" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="normal" fill="#43545F" text-anchor="end">100%</text>
+    <line x1="743" y1="222" x2="743" y2="448" stroke="#43545F" stroke-width="1" />
+    <text x="681" y="335.0" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="bold" fill="#182A37" text-anchor="middle" transform="rotate(-90 681 335.0)">Biopsy-confirmed fraction</text>
+    <text x="905.5" y="505" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="bold" fill="#182A37" text-anchor="middle">Symptom completeness</text>
+    <text x="652" y="549" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="bold" fill="#43545F">Biopsy-confirmed / total lesion keys</text>
+    <rect id="estimate-B-0" x="786.0625" y="350.44384303112315" width="76.375" height="97.55615696887685" fill="#125C69" />
+    <text x="824.25" y="342.44384303112315" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="bold" fill="#125C69" text-anchor="middle">43.17%</text>
+    <text x="824.25" y="474" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="normal" fill="#182A37" text-anchor="middle">Complete</text>
+    <text x="824.25" y="580" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="bold" fill="#125C69" text-anchor="middle" id="counts-B-0">638 / 1,478</text>
+    <rect id="estimate-B-1" x="948.5625" y="222.0" width="76.375" height="226.0" fill="#125C69" />
+    <text x="986.75" y="214.0" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="bold" fill="#125C69" text-anchor="middle">100.00%</text>
+    <text x="986.75" y="474" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="normal" fill="#182A37" text-anchor="middle">Missing</text>
+    <text x="986.75" y="580" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="bold" fill="#125C69" text-anchor="middle" id="counts-B-1">387 / 387</text>
+  </g>
+  <text x="46" y="625" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="normal" fill="#43545F">Missing means that growth, change or bleeding was unknown on at least one photo of the lesion.</text>
+  <text x="46" y="651" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="normal" fill="#43545F">Open points mark the small groups with one or three unknown symptoms (10 and 6 keys, respectively).</text>
+  <text x="46" y="677" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="normal" fill="#43545F">These proportions describe the recorded cases. They cannot establish why symptoms were missing.</text>
+</svg>

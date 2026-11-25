@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 735" width="1120" height="735" role="img" aria-labelledby="title description">
+  <title id="title">Figure 1. Dataset curation and cohort flow</title>
+  <desc id="description">Duplicate-image quarantine removes whole patient–lesion keys from the original inventory. The retained keys split into symptom-complete and symptom-incomplete groups. The biopsy-confirmed S3 subset is drawn exclusively from the complete group.</desc>
+  <defs>
+    <marker id="arrowhead" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M 0 0 L 7 4 L 0 8 Z" fill="#536C78" />
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="1120" height="735" fill="white" />
+  <text x="46" y="35" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="bold" fill="#125C69" letter-spacing="1.2">PAD-UFES-20 V1.1  ·  FIGURE 1</text>
+  <text x="44" y="81" font-family="Arial, Helvetica, sans-serif" font-size="37" font-weight="bold" fill="#182A37">Dataset curation and cohort flow</text>
+  <text x="46" y="111" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="normal" fill="#43545F">A lesion key groups all photographs of one patient–lesion combination.</text>
+  <path id="original-to-curated" d="M 297 220 V 269" fill="none" stroke="#536C78" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrowhead)" />
+  <path id="whole-key-exclusions" d="M 297 244 H 621" fill="none" stroke="#536C78" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrowhead)" />
+  <path id="curated-to-complete" d="M 297 352 V 414" fill="none" stroke="#536C78" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrowhead)" />
+  <path id="curated-to-incomplete" d="M 297 382 H 823 V 414" fill="none" stroke="#536C78" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrowhead)" />
+  <path id="complete-to-s3" d="M 297 523 V 564" fill="none" stroke="#536C78" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrowhead)" />
+  <circle cx="297" cy="244" r="3.1" fill="#536C78" />
+  <circle cx="297" cy="382" r="3.1" fill="#536C78" />
+  <g id="original-inventory">
+    <rect x="48" y="138" width="498" height="82" rx="6" fill="white" stroke="#A6B8BE" stroke-width="1.4" />
+    <text x="68" y="170" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="bold" fill="#182A37">Original inventory</text>
+    <text x="68" y="200" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="normal" fill="#182A37">1,891 keys  ·  1,373 patients  ·  2,298 images</text>
+  </g>
+  <g id="duplicate-audit">
+    <rect x="622" y="162" width="450" height="160" rx="6" fill="#F5F7F8" stroke="#A6B8BE" stroke-width="1.4" />
+    <text x="642" y="194" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="bold" fill="#182A37">Duplicate-image audit</text>
+    <text x="642" y="223" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="normal" fill="#182A37">15 SHA-256-identical pairs</text>
+    <text x="642" y="249" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="normal" fill="#182A37">1 additional RGB-identical pair</text>
+    <line x1="642" y1="265" x2="1052" y2="265" stroke="#A6B8BE" />
+    <text x="642" y="292" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="bold" fill="#182A37">26 keys quarantined  ·  42 images excluded</text>
+  </g>
+  <g id="curated-cohort">
+    <rect x="48" y="270" width="498" height="82" rx="6" fill="#F0F6F6" stroke="#125C69" stroke-width="1.4" />
+    <text x="68" y="302" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="bold" fill="#125C69">Curated cohort</text>
+    <text x="68" y="332" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="normal" fill="#182A37">1,865 keys  ·  1,368 patients  ·  2,256 images</text>
+  </g>
+  <g id="symptom-complete">
+    <rect x="48" y="415" width="498" height="108" rx="6" fill="#EAF3F3" stroke="#125C69" stroke-width="1.4" />
+    <text x="68" y="445" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="bold" fill="#125C69">Symptom-complete (H1)</text>
+    <text x="68" y="474" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="bold" fill="#182A37">1,478 keys</text>
+    <text x="226" y="474" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="normal" fill="#182A37">475 positive  ·  1,003 negative</text>
+    <text x="68" y="502" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="normal" fill="#43545F">1,115 patients  ·  1,854 images</text>
+  </g>
+  <g id="symptom-incomplete">
+    <rect x="574" y="415" width="498" height="108" rx="6" fill="white" stroke="#A6B8BE" stroke-width="1.4" />
+    <text x="594" y="445" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="bold" fill="#182A37">Symptom-incomplete</text>
+    <text x="594" y="474" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="bold" fill="#182A37">387 keys</text>
+    <text x="752" y="474" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="normal" fill="#182A37">341 positive  ·  46 negative</text>
+    <text x="594" y="502" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="normal" fill="#43545F">318 patients  ·  402 images</text>
+  </g>
+  <g id="s3-subset">
+    <rect x="48" y="565" width="498" height="108" rx="6" fill="white" stroke="#A6B8BE" stroke-width="1.4" />
+    <text x="68" y="595" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="bold" fill="#182A37">S3 biopsy-confirmed subset</text>
+    <text x="68" y="624" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="bold" fill="#182A37">638 keys</text>
+    <text x="226" y="624" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="normal" fill="#182A37">475 positive  ·  163 negative</text>
+    <text x="68" y="652" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="normal" fill="#43545F">508 patients  ·  903 images</text>
+  </g>
+  <line x1="594" y1="583" x2="594" y2="652" stroke="#A6B8BE" stroke-width="2" />
+  <text x="615" y="601" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="bold" fill="#182A37">Patient overlap</text>
+  <text x="615" y="628" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="normal" fill="#43545F">65 patients contributed keys to both groups.</text>
+  <text x="615" y="651" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="normal" fill="#43545F">Each key belongs to exactly one symptom group.</text>
+  <line x1="46" y1="692" x2="1073" y2="692" stroke="#D7E0E3" />
+  <text x="46" y="719" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="normal" fill="#43545F">Positive and negative counts refer to the study’s binary cancer label.</text>
+</svg>

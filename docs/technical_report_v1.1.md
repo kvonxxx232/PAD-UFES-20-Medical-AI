@@ -45,6 +45,10 @@ After fixing the duplicate decisions, the pipeline checked age, site, detailed d
 
 A complete key required an observed and consistent True or False value for each of `grew`, `changed` and `bleed` on every photograph. Of 389 original keys with any unknown symptom, two had already qualified for duplicate quarantine. Sixty-five patients contributed both complete and incomplete retained keys. S3 is nested within the complete cohort.
 
+![Flow from the original image inventory through duplicate quarantine to the symptom-complete and incomplete cohorts, with the biopsy subset nested under complete cases.](figures/figure_1_dataset_curation_and_cohort_flow.svg)
+
+**Figure 1. Dataset curation and cohort flow.** The 16 confirmed identical-content pairs led to quarantine of 26 whole lesion keys, leaving 1,865 keys. The biopsy-confirmed S3 subset comes from the symptom-complete branch. Patient counts overlap across the two symptom branches because 65 patients contributed keys to both.
+
 ## 3. Model fitting and statistical analysis
 
 **Patient grouping and outer folds.** Connected components were defined by patient identity and any confirmed cross-patient identical-content links established before quarantine. Here each component contained one patient. The outer split used one row per curated key, sorted lexicographically by the two identifier strings. Five-fold `StratifiedGroupKFold` used patient components as groups, shuffling with seed **20261124** and four strata encoded by `2 * binary_label + int(symptom_complete)`. The saved assignment placed 373 curated keys in each fold. Each photograph inherited its key's fold. H1 and the secondary evaluations restricted these same outer assignments to their specified populations.
@@ -80,6 +84,10 @@ The primary comparison used all 1,478 complete test keys exactly once, including
 | **Pooled** | 1,115 | 1,478 | 475 | 0.422859 | 0.355035 | -0.067824 | — | — |
 
 All 250 inner fits and 10 outer refits converged, with zero fit warnings and 26–1,261 iterations. C selection was completed using only inner validation data. The primary comparison is the pooled lesion estimate. The individual folds describe its consistency across the fixed split.
+
+![Five fold estimates and the pooled log loss difference lie below zero. The pooled estimate has a horizontal confidence interval.](figures/figure_2_primary_effect_by_outer_fold.svg)
+
+**Figure 2. Primary effect by outer fold.** Adding the three symptoms lowered log loss in every outer fold. The pooled difference (B − A) was −0.067824 (95% CI −0.084488 to −0.050819). The interval uses paired patient-cluster bootstrap resampling and applies to the pooled estimate conditional on the fitted models and fixed folds.
 
 ## 5. Prespecified secondary analyses
 
@@ -146,6 +154,10 @@ After fitting the usual training-partition preprocessing, we multiplied standard
 
 The unrounded factor-one Δ and original H1 Δ were both **−0.06782443964243512**, an absolute difference of **0.0** against the frozen numerical tolerance of 0.001. The two OOF files were byte-identical. H1 retained its predictions, but did not persist its embedding matrix. S4 regenerated the embeddings once with the verified H1 weights, transforms, photo order and CPU batch size, and shared the matrix across all three factors. All 780 fits converged with zero warnings. The loss advantage had the same direction across factors, with some variation in magnitude. These comparisons neither establish equivalence between factors nor select an optimal clinical weight.
 
+![Pooled and fold-specific log loss differences for H1 and S2 training populations and for three clinical-feature multipliers in S4.](figures/figure_3_training_population_and_clinical_feature_scaling_sensitivity.svg)
+
+**Figure 3. Training population and clinical-feature scaling sensitivity.** In panel A, including incomplete keys in training moved pooled Δ log loss (B − A) from −0.067824 (H1) to −0.044796 (S2) on the same 1,478 complete test keys. In panel B, the prespecified primary multiplier of 1 reproduced H1, and all three multipliers favoured Model B in every fold. S2 and S4 provide descriptive point estimates.
+
 ### S6. Calibration of the original OOF probabilities
 
 For each model, we fitted an unpenalised logistic regression of the observed binary label on the logit of the original OOF probability, with one equally weighted row per lesion. The model was `logit Pr(Y = 1 | p) = α + β logit(p)`, with intercept and slope estimated jointly. Ideal values are α = 0 and β = 1. The joint intercept has a different interpretation from an intercept estimated with slope fixed at one. All original probabilities were strictly between zero and one, so their logits needed no clipping. We used the fitted coefficients solely to assess calibration. All reported probabilities retain their original OOF values.
@@ -172,6 +184,10 @@ The reliability-diagram coordinates below use the mean prediction and observed p
 
 Both slopes were close to one. On the logit scale, A's slope above one suggests that its predicted positive-class probabilities were slightly too close together, while B's slope below one suggests that its predictions were slightly too far apart. A single slope obscures local departures. In the highest bin, A predicted 94.97% on average and 62/73 keys (84.93%) were positive. B predicted 95.87% and 133/145 (91.72%) were positive. In the 0.4–0.5 bin A underestimated the event fraction while B overestimated it. The models assign different keys to a given bin. These estimates describe calibration in the same internal test predictions and do not validate a recalibrated model or establish calibration in a population with a different prevalence.
 
+![Reliability diagrams compare mean predicted probability with observed positive fraction for each model. Bars below the plots give lesion counts in each bin.](figures/figure_4_reliability_diagrams.svg)
+
+**Figure 4. Reliability diagrams for Models A and B.** Each point summarises the original OOF predictions in one of ten fixed equal-width bins. Both models predicted a higher positive fraction than was observed in their highest bin. The counts beneath each panel show how many lesions contributed to each estimate. Calibration here describes the internal complete-case cohort.
+
 ### S7. Descriptive epidemiology of missingness
 
 S7 used all **1,865** retained keys before the primary restriction. A symptom counted as unknown for a key if it was unknown or missing on any of its photos. Each distinct symptom field counted at most once. The 387 keys with any unknown represented **20.75%** of the curated cohort. Their cancer-positive fraction was **88.11%**, compared with **32.14%** among complete keys. All 387 had a biopsy, compared with 638/1,478 (43.17%) complete keys. The full distribution of age, sex, site, diagnosis and photos per key appears in Table 1 in the appendix.
@@ -187,6 +203,10 @@ Of the 1,865 keys, **385 (20.64%)** had unknown growth, **379 (20.32%)** unknown
 
 Among **346 patients** with at least two retained keys, 237 had only complete keys, 44 had only incomplete keys and 65 had both. The fraction whose keys all shared one any-unknown status was **281/346 (81.21%)**, counting each patient once. Patient identifiers were used solely for grouping. Concordance describes the distribution of recorded fields and does not identify the timing or cause of missingness.
 
+![Cancer-positive fraction by number of unknown symptoms, alongside biopsy-confirmed fractions for symptom-complete and incomplete keys.](figures/figure_5_symptom_missingness_and_case_composition.svg)
+
+**Figure 5. Symptom missingness and case composition.** Panel A shows the cancer-positive fraction by number of unknown symptoms. The groups with one and three unknowns contained only 10 and 6 keys, respectively. In panel B, all 387 symptom-incomplete keys were biopsy-confirmed, compared with 638 of 1,478 complete keys. These counts describe case composition and cannot establish why symptoms were missing.
+
 ## 6. Interpretation and study limits
 
 **What the four measures answer.** AUROC summarises how often a positive key ranks above a negative key, counting ties as one half. The numerical probability attached to that ranking can still be inaccurate. Log loss scores the probability assigned to the observed label and penalises confident errors particularly strongly. Brier score is the mean squared difference between predicted probability and the binary label. Both probability scores incorporate more than calibration, and their averages depend on the population being evaluated. Calibration asks whether observed event fractions agree with stated probabilities. Even when the mean predicted positive-class probability is close to the overall positive fraction, the mean prediction in a particular bin can exceed that bin's observed positive fraction. None of these measures, on its own, establishes an appropriate threshold or a clinical benefit.
@@ -201,7 +221,7 @@ Among **346 patients** with at least two retained keys, 237 had only complete ke
 
 ## 7. Reproducibility and evidence available for review
 
-The protocol freeze tag `protocol-v1.1-frozen` points to `67ebe7c830d8be409f16bcf54ab593a8609e97c9`. The H1 training run records a clean local code commit, `c62f33e1ce752df0f235a5f664a3425d8b6bafe5`. S2 and S4 record that base commit **and** separate source-file fingerprints for their local analysis code. Those additional sources are pending version control at the time of drafting. The runs used Python 3.12.10, NumPy 2.5.5, SciPy 1.18.1, scikit-learn 1.9.1, Pillow 13.0.0, PyTorch 2.15.0 and torchvision 0.29.2. The encoder ran on CPU with a batch size of 32.
+The protocol freeze tag `protocol-v1.1-frozen` points to `67ebe7c830d8be409f16bcf54ab593a8609e97c9`. The H1 training run records a clean local code commit, `c62f33e1ce752df0f235a5f664a3425d8b6bafe5`. S2 and S4 record that base commit **and** separate source-file fingerprints for their local analysis code. The S2 and S4 source files and tests were subsequently archived in local Git commit `bc0b151a03dbf018f562da3b05c4651d2a2058f7`. At the time of this revision, that commit had not been pushed to GitHub. The runs used Python 3.12.10, NumPy 2.5.5, SciPy 1.18.1, scikit-learn 1.9.1, Pillow 13.0.0, PyTorch 2.15.0 and torchvision 0.29.2. The encoder ran on CPU with a batch size of 32.
 
 | Reproduction object | SHA-256 |
 | --- | --- |
@@ -217,15 +237,15 @@ The frozen protocol specifies the canonical ordering and serialisation for the p
 
 S1 and S6 were recalculated from the sealed H1 OOF probabilities. S3 additionally used biopsy status from the verified metadata and retained-key membership. S7 used the verified metadata and Stage 2 membership. These four analyses were reconstructed in memory from existing inputs. They have no separate archived result packages. The project has stage-specific entry points for curation, splitting and model fitting. A tested single clean-environment command that reproduces the entire chain and all prespecified tables remains outstanding. The aggregate tables here can be checked without refitting the classifiers. [Protocol and reproduction requirements](../protocol_v1.1.md)
 
-## 8. Figures proposed for the reviewed report
+## 8. Figures
 
-| Figure | Content |
-| --- | --- |
-| 1. Cohort and audit flow | Trace 2,298 photos and 1,891 keys through the two duplicate rules, whole-key quarantine, completeness restriction and nested biopsy subset. Show both photo and key counts. |
-| 2. Primary effect by outer fold | Plot the five fold-specific H1 log loss differences and the pooled difference against zero. Add the patient-bootstrap interval only to the pooled point. |
-| 3. Training and scaling sensitivities | Display H1 and S2 on the common complete test set in one panel. Show the three prespecified S4 multipliers and their fold-specific differences in another. |
-| 4. Reliability diagrams | Plot each occupied bin's mean prediction against its observed positive fraction for each model. Use common axes, an identity line and counts from S6. |
-| 5. Symptom recording and case mix | Show the positive fraction and denominator at each unknown-field count, with a separate panel for biopsy proportions in complete and incomplete keys. |
+| Figure | Title | Report section |
+| ---: | --- | --- |
+| 1 | [Dataset curation and cohort flow](figures/figure_1_dataset_curation_and_cohort_flow.svg) | [Metadata checks and cohort flow](#metadata-checks-and-cohort-flow) |
+| 2 | [Primary effect by outer fold](figures/figure_2_primary_effect_by_outer_fold.svg) | [H1 primary result](#4-primary-result-h1) |
+| 3 | [Training population and clinical-feature scaling sensitivity](figures/figure_3_training_population_and_clinical_feature_scaling_sensitivity.svg) | [S2 training population](#s2-train-on-all-curated-keys-and-evaluate-on-the-h1-test-keys) and [S4 clinical-feature scaling](#s4-clinical-feature-scaling-sensitivity) |
+| 4 | [Reliability diagrams for Models A and B](figures/figure_4_reliability_diagrams.svg) | [S6 calibration](#s6-calibration-of-the-original-oof-probabilities) |
+| 5 | [Symptom missingness and case composition](figures/figure_5_symptom_missingness_and_case_composition.svg) | [S7 missingness](#s7-descriptive-epidemiology-of-missingness) |
 
 ## Appendix. Table 1 — Curated cohort by symptom recording status (S7)
 

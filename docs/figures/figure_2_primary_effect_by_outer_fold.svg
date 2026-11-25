@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="2000" height="1240" viewBox="0 0 1000 620" role="img" aria-labelledby="title description">
+  <title id="title">Figure 2. Primary effect by outer fold</title>
+  <desc id="description">Lesion-level out-of-fold log loss differences for Model B minus Model A. Negative values favour Model B. Fold 1: −0.088830. Fold 2: −0.059935. Fold 3: −0.088560. Fold 4: −0.038966. Fold 5: −0.062885. Pooled difference: −0.067824; paired patient-bootstrap 95% confidence interval [−0.084488, −0.050819].</desc>
+  <rect x="0" y="0" width="1000" height="620" fill="#FFFFFF" />
+  <text x="42" y="35" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="bold" fill="#125C69" text-anchor="start" letter-spacing="1.2">PAD-UFES-20 V1.1  ·  FIGURE 2</text>
+  <text x="40" y="81" font-family="Arial, Helvetica, sans-serif" font-size="37" font-weight="bold" fill="#182A37" text-anchor="start">Primary effect by outer fold</text>
+  <text x="42" y="111" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="normal" fill="#43545F" text-anchor="start">1,478 symptom-complete lesion keys from 1,115 patients</text>
+  <text x="42" y="159" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="bold" fill="#182A37" text-anchor="start">Evaluation set</text>
+  <text x="192" y="159" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="normal" fill="#43545F" text-anchor="start">Negative values favour Model B</text>
+  <text x="720" y="159" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="bold" fill="#182A37" text-anchor="start">Estimate</text>
+  <line x1="42" y1="172" x2="958" y2="172" stroke="#C6D1D6" stroke-width="1" />
+  <rect x="42" y="401" width="916" height="70" fill="#EAF3F3" />
+  <line x1="192.0" y1="173" x2="192.0" y2="479" stroke="#D7E0E3" stroke-width="1.0" />
+  <line x1="192.0" y1="480" x2="192.0" y2="486" stroke="#8B9BA3" stroke-width="1.1" />
+  <text x="192.0" y="506" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="normal" fill="#43545F" text-anchor="middle">−0.10</text>
+  <line x1="275.0" y1="173" x2="275.0" y2="479" stroke="#D7E0E3" stroke-width="1.0" />
+  <line x1="275.0" y1="480" x2="275.0" y2="486" stroke="#8B9BA3" stroke-width="1.1" />
+  <text x="275.0" y="506" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="normal" fill="#43545F" text-anchor="middle">−0.08</text>
+  <line x1="358.0" y1="173" x2="358.0" y2="479" stroke="#D7E0E3" stroke-width="1.0" />
+  <line x1="358.0" y1="480" x2="358.0" y2="486" stroke="#8B9BA3" stroke-width="1.1" />
+  <text x="358.0" y="506" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="normal" fill="#43545F" text-anchor="middle">−0.06</text>
+  <line x1="441.0" y1="173" x2="441.0" y2="479" stroke="#D7E0E3" stroke-width="1.0" />
+  <line x1="441.0" y1="480" x2="441.0" y2="486" stroke="#8B9BA3" stroke-width="1.1" />
+  <text x="441.0" y="506" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="normal" fill="#43545F" text-anchor="middle">−0.04</text>
+  <line x1="524.0" y1="173" x2="524.0" y2="479" stroke="#D7E0E3" stroke-width="1.0" />
+  <line x1="524.0" y1="480" x2="524.0" y2="486" stroke="#8B9BA3" stroke-width="1.1" />
+  <text x="524.0" y="506" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="normal" fill="#43545F" text-anchor="middle">−0.02</text>
+  <line x1="607.0" y1="173" x2="607.0" y2="480" stroke="#52636B" stroke-width="1.65" stroke-dasharray="5 4" id="zero-reference" />
+  <line x1="607.0" y1="480" x2="607.0" y2="486" stroke="#8B9BA3" stroke-width="1.1" />
+  <text x="607.0" y="506" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="bold" fill="#182A37" text-anchor="middle">0</text>
+  <line x1="690.0" y1="173" x2="690.0" y2="479" stroke="#D7E0E3" stroke-width="1.0" />
+  <line x1="690.0" y1="480" x2="690.0" y2="486" stroke="#8B9BA3" stroke-width="1.1" />
+  <text x="690.0" y="506" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="normal" fill="#43545F" text-anchor="middle">+0.02</text>
+  <line x1="192" y1="480" x2="690" y2="480" stroke="#8B9BA3" stroke-width="1" />
+  <g id="fold-1">
+    <text x="42" y="206" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="normal" fill="#182A37" text-anchor="start">Fold 1</text>
+    <circle cx="238.35509" cy="200" r="6.5" fill="#39556B" />
+    <text x="720" y="206" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="normal" fill="#182A37" text-anchor="start">−0.088830</text>
+  </g>
+  <g id="fold-2">
+    <text x="42" y="250" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="normal" fill="#182A37" text-anchor="start">Fold 2</text>
+    <circle cx="358.27153" cy="244" r="6.5" fill="#39556B" />
+    <text x="720" y="250" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="normal" fill="#182A37" text-anchor="start">−0.059935</text>
+  </g>
+  <g id="fold-3">
+    <text x="42" y="294" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="normal" fill="#182A37" text-anchor="start">Fold 3</text>
+    <circle cx="239.47405" cy="288" r="6.5" fill="#39556B" />
+    <text x="720" y="294" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="normal" fill="#182A37" text-anchor="start">−0.088560</text>
+  </g>
+  <g id="fold-4">
+    <text x="42" y="338" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="normal" fill="#182A37" text-anchor="start">Fold 4</text>
+    <circle cx="445.292" cy="332" r="6.5" fill="#39556B" />
+    <text x="720" y="338" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="normal" fill="#182A37" text-anchor="start">−0.038966</text>
+  </g>
+  <g id="fold-5">
+    <text x="42" y="382" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="normal" fill="#182A37" text-anchor="start">Fold 5</text>
+    <circle cx="346.02874" cy="376" r="6.5" fill="#39556B" />
+    <text x="720" y="382" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="normal" fill="#182A37" text-anchor="start">−0.062885</text>
+  </g>
+  <g id="pooled">
+    <text x="54" y="442" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="bold" fill="#125C69" text-anchor="start">Pooled</text>
+    <line x1="256.37412" y1="435" x2="396.10084" y2="435" stroke="#125C69" stroke-width="3.5" id="pooled-ci" />
+    <line x1="256.37412" y1="427" x2="256.37412" y2="443" stroke="#125C69" stroke-width="2.5" id="ci-low" />
+    <line x1="396.10084" y1="427" x2="396.10084" y2="443" stroke="#125C69" stroke-width="2.5" id="ci-high" />
+    <polygon points="325.52858,426.5 334.02858,435 325.52858,443.5 317.02858,435" fill="#125C69" id="pooled-point" />
+    <text x="720" y="431" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="bold" fill="#125C69" text-anchor="start">−0.067824</text>
+    <text x="720" y="454" font-family="Arial, Helvetica, sans-serif" font-size="15.5" font-weight="normal" fill="#182A37" text-anchor="start">95% CI [−0.084488, −0.050819]</text>
+  </g>
+  <text x="441.0" y="539" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="bold" fill="#182A37" text-anchor="middle">Δ log loss (Model B − Model A)</text>
+  <line x1="42" y1="555" x2="958" y2="555" stroke="#C6D1D6" stroke-width="1" />
+  <text x="42" y="581" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="normal" fill="#43545F" text-anchor="start">Model A uses image features, age and anatomical site. Model B adds growth, change and bleeding.</text>
+  <text x="42" y="604" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="normal" fill="#43545F" text-anchor="start">Only the pooled interval is shown (2,000 paired patient-cluster bootstrap resamples).</text>
+</svg>
